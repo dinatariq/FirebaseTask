@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    <data>
+       <variable
+    name="employee"
+    type="com.itdawn.taskfirebase.Employee" />
+    </data>
+
+       <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+       android:clickable="true"
+       android:focusable="true"
+       android:foreground="?selectableItemBackground"
+       app:cardCornerRadius="12dp"
+       app:cardElevation="8dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="12dp"
+           android:padding="8dp">
+
+           <ImageView
+               android:id="@+id/emloyeeImage"
+               android:layout_width="214dp"
+               android:layout_height="192dp"
+               android:layout_below="@+id/uploadTitle"
+               android:layout_alignaParentTop="true"
+               android:layout_marginLeft="8dp"
+               app:imageUri="@{employee.loadImage()"/>
+
+           <EditText
+               android:id="@+id/employeeName"
+               android:layout_width="match_parent"
+               android:layout_height="48dp"
+               android:layout_margin="5dp"
+               android:hint="الاسم الكامل"
+               android:inputType="text"
+               android:padding="5dp"
+               tools:ignore="Autofill"/>
+
+           <EditText
+               android:id="@+id/employeeServices"
+               android:layout_width="match_parent"
+               android:layout_height="48dp"
+               android:layout_below="@+id/employeeName"
+               android:layout_margin="5dp"
+               android:hint="سنوات الخدمة"
+               android:inputType="text"
+               android:padding="5dp"
+               tools:ignore="Autofill"/>
+       </RelativeLayout>
+       </androidx.cardview.widget.CardView>
+</layout

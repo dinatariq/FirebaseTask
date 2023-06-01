@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/uploadTitle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignaParentTop="true"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="بيانات الموظف"
+            android:textSize="24sp"/>
+
+        <ImageView
+            android:id="@+id/emloyeeImage"
+            android:layout_width="214dp"
+            android:layout_height="192dp"
+            android:layout_below="@+id/uploadTitle"
+            android:layout_alignaParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/baseline_person_outline_24"/>
+        <Button
+            android:id="@+id/selectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_above="@+id/employeeName"
+            android:layout_alignaParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:text="اختيار صورة"/>
+
+        <EditText
+            android:id="@+id/employeeName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/emloyeeImage"
+            android:layout_margin="5dp"
+            android:hint="الاسم الكامل"
+            android:inputType="text"
+            android:padding="5dp"
+            tools:ignore="Autofill"/>
+
+        <EditText
+            android:id="@+id/employeeJob"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/employeeName"
+            android:layout_margin="5dp"
+            android:hint="المهنة"
+            android:inputType="text"
+            android:padding="5dp"
+            tools:ignore="Autofill"/>
+
+        <EditText
+            android:id="@+id/employeeAge"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/employeeJob"
+            android:layout_margin="5dp"
+            android:hint="العمر"
+            android:inputType="text"
+            android:padding="5dp"
+            tools:ignore="Autofill"/>
+
+
+        <EditText
+            android:id="@+id/employeeServices"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/employeeAge"
+            android:layout_margin="5dp"
+            android:hint="سنوات الخدمة"
+            android:inputType="text"
+            android:padding="5dp"
+            tools:ignore="Autofill"/>
+
+
+        <Button
+            android:id="@+id/saveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_above="@+id/employeeServices"
+            android:text="حفظ البيانات"
+
+
+
+
+        </layout>
+

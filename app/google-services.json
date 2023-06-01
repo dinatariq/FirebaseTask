@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "615771597712",
+    "project_id": "data-9fbcb",
+    "storage_bucket": "data-9fbcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615771597712:android:f6e8face6e05413c6f2115",
+        "android_client_info": {
+          "package_name": "com.itdawn.intro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615771597712-to1gdd0f8ibu0u5ijdrv77qlaetu0ve4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY2IMT_6Re06MGPl8IcC0ReNxacESnoEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615771597712-to1gdd0f8ibu0u5ijdrv77qlaetu0ve4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
