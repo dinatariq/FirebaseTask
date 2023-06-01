@@ -18,6 +18,7 @@ FirebaseStorage storage;
 private Uri uri;
 EmployeeRecyclerAdapter employeeRecyclerAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
