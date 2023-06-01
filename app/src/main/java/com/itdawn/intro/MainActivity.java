@@ -1,55 +1,86 @@
 package com.itdawn.intro;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.Toast;
+public class MainActivity extends AppCompatActivity {
 
 
 
-public class MainActivity<savedInstanceState> extends AppCompatActivity {
-    ActivityMainBinding mainBinding;
+    FirebaseFirestore db;
+
+ActivityMainBinding mainBinding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(mainBinding.getRoot());
+        mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        db = FirebaseFirestore.getInstance();
+        Employees employees= new Employee("Ahmed", "23", "dd", "12", imageUri);
+        Employees employees= new Employee("sajjad", "35", "Teacher", "12", imageUri);
 
-        //
-
-        mainBinding.sendButton.setOnClickListener(view -> Toast.makeText(this, "Send Button", Toast.LENGTH_SHORT).show());
-        sendDataToActivity2();
-        mainBinding.sendButton.setText("Data received from Result Activity");
-
-        {
-
-        }
-
-        launchForResult();
-    }
-    ActivityResultLauncher<Intent> activityLauncher ;
-    private void launchForResult() {
-        Intent intentForResult = new Intent(this, ResultActivity.class);
-        activityLauncher.launch(intentForResult);
-
-
+        mainBinding.addToFireStore.setOnClicckListener(view -> addToFireSore(employee));
     }
 
-    private void sendDataToActivity2() {
-        Intent sendIntent = new Intent(this, ResultActivity.class);
-        sendIntent.putExtra("myString", "I am from Main Activity");
-        startActivity(sendIntent);
-
-    }
-
-    ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
-        if (result.getResultCode() == Activity.RESULT_OK) {
-            mainBinding.sendButton.setText(result.getData().getStringExtra("myData"));
+    private void addToFireSore(Employees employee) {
+        List<Employees> employeeList = new ArrayList<>();
+        // Add a new document with a generated ID
+        db.collection("Employees")
+                .document("ME")
+                .collection(employee)
+                .document("SQ")
+                .collection(employee)
+                .set(employee)
+                .addOnCompleteListener(new OnCompleteListener<Void>task) {
+         @Override
+                 public void onComplete(Task<Void> task){
+             if (task.isComplete()){
+                 Toast.makeText(this, "Data uploaded to firestore",Toast.LENGTH_LONG).show();
+             }
         }
     });
+    }
+private class Employee{
+        String Name,Age, Job, Services,imageUri;
+
+    public Employee(String Name, String Age, String Job,String Services ,String imageUri) {
+        this.Name = Name ;
+        this.Age = Age ;
+        this.Job = Job ;
+        this.Services = Services;
+        this.imageUri = imageUri;
+    }
+
+    public String getName() {return Name;}
+
+    public void setName(String name) {Name = name;}
+
+    public String getAge() {
+        return Age;
+    }
+
+    public void setAge(String age) {
+        Age = age;
+    }
+
+    public String getJob() {
+        return Job;
+    }
+
+    public void setJob(String job) {
+        Job = job;
+    }
+
+    public String getServices() {
+        return Services;
+    }
+
+    public void setServices(String services) {
+        Services = services;
+    }
+
+    public String getimageUri() {
+        return imageUri;
+    }
+
+    public void setUri(String imageuri) {imageUri = imageuri;}
+}
 }

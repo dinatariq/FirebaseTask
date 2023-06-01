@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-<EditText
-    android:id="@+id/data"
-    android:text="Data"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:layout_margin="@dimen/activity_vertical_margin"/>
+   <data>
 
-    <Button
-        android:id="@+id/sendButton"
+   </data>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_margin="@dimen/activity_vertical_margin"
-        android:layout_below="@id/data"
-        android:text="send Button"/>
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_alignaParentTop="true"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="بيانات الموظفين"
+            android:textSize="28sp"/>
+
+
+        <Button
+            android:id="@+id/openViewActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="ادخال بيانات"/>
+
+        <Button
+            android:id="@+id/openUploadActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="عرض البيانات"
 
 
 
-    <TextView
-        android:id="@+id/dataReceived"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data received from Result Activity"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:gravity="center"
-        android:layout_below="@id/sendButton"
-        android:layout_margin="@dimen/activity_vertical_margin"
-        android:textSize="24sp" />
+        </RelativeLayout>
 
-
-
-
-</RelativeLayout>
