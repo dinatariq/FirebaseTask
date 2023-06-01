@@ -3,7 +3,6 @@ package com.itdawn.intro;
 public class MainActivity extends AppCompatActivity {
 
 
-
     FirebaseFirestore db;
 
 ActivityMainBinding mainBinding;
