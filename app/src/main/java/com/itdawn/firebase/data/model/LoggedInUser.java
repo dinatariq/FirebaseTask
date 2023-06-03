@@ -1,4 +1,4 @@
-package com.itdawn.intro.data.model;
+package com.itdawn.firebase.data.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

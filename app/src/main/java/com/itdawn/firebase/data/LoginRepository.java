@@ -1,6 +1,6 @@
-package com.itdawn.intro.data;
+package com.itdawn.firebase.data;
 
-import com.itdawn.intro.data.model.LoggedInUser;
+import com.itdawn.firebase.data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and

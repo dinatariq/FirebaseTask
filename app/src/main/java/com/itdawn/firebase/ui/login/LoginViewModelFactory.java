@@ -1,11 +1,11 @@
-package com.itdawn.intro.ui.login;
+package com.itdawn.firebase.ui.login;
 
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
 
-import com.itdawn.intro.data.LoginDataSource;
-import com.itdawn.intro.data.LoginRepository;
+import com.itdawn.firebase.data.LoginDataSource;
+import com.itdawn.firebase.data.LoginRepository;
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

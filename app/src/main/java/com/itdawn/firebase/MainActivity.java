@@ -1,4 +1,4 @@
-package com.itdawn.intro;
+package com.itdawn.firebase;
 
 public class MainActivity extends AppCompatActivity {
 

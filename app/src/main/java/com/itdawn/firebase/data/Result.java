@@ -1,4 +1,4 @@
-package com.itdawn.intro.data;
+package com.itdawn.firebase.data;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.

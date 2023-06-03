@@ -1,6 +1,6 @@
-package com.itdawn.intro.data;
+package com.itdawn.firebase.data;
 
-import com.itdawn.intro.data.model.LoggedInUser;
+import com.itdawn.firebase.data.model.LoggedInUser;
 
 import java.io.IOException;
 

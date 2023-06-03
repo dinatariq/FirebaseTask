@@ -1,4 +1,4 @@
-package com.itdawn.intro;
+package com.itdawn.firebase;
 
 import android.app.DownloadManager;
 import android.graphics.Bitmap;
@@ -9,7 +9,6 @@ import android.util.Log;
 ;
 
 import java.io.ByteArrayOutputStream;
-import java.io.OutputStream;
 
 
 public class UploadActivity extends Upload {

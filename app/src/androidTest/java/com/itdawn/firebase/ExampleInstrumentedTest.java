@@ -1,4 +1,4 @@
-package com.itdawn.intro;
+package com.itdawn.firebase;
 
 import android.content.Context;
 

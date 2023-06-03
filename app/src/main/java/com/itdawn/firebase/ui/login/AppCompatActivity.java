@@ -1,4 +1,4 @@
-package com.itdawn.intro.ui.login;
+package com.itdawn.firebase.ui.login;
 
 import android.os.Bundle;
 

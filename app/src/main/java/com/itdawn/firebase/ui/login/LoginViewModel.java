@@ -1,4 +1,4 @@
-package com.itdawn.intro.ui.login;
+package com.itdawn.firebase.ui.login;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -6,9 +6,9 @@ import androidx.lifecycle.ViewModel;
 
 import android.util.Patterns;
 
-import com.itdawn.intro.data.LoginRepository;
-import com.itdawn.intro.data.Result;
-import com.itdawn.intro.data.model.LoggedInUser;
+import com.itdawn.firebase.data.LoginRepository;
+import com.itdawn.firebase.data.Result;
+import com.itdawn.firebase.data.model.LoggedInUser;
 
 public class LoginViewModel extends ViewModel {
 

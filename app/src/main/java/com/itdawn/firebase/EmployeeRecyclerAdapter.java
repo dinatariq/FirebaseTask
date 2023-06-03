@@ -1,5 +1,4 @@
-package com.itdawn.intro;
-import android.text.Layout;
+package com.itdawn.firebase;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 

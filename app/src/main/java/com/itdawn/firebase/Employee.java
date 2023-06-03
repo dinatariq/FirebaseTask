@@ -1,4 +1,4 @@
-package com.itdawn.intro;
+package com.itdawn.firebase;
 
 import androidx.databinding.BindingAdapter;
 

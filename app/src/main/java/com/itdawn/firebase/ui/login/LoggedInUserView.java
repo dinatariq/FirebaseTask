@@ -1,4 +1,4 @@
-package com.itdawn.intro.ui.login;
+package com.itdawn.firebase.ui.login;
 
 /**
  * Class exposing authenticated user details to the UI.

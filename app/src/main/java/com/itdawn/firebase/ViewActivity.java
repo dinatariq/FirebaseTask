@@ -1,9 +1,9 @@
-package com.itdawn.intro;
+package com.itdawn.firebase;
 
 
 import android.app.DownloadManager;
 import android.view.View;
-import android.widget.Toast;
+
 import  androidx.recyclerview.widget.RecyclerView;
 public class ViewActivity extends RecyclerView.View{
 
